@@ -2,7 +2,9 @@
 
 {% block content %}
 
-<h2>Add a class message</h2>
+
+<div style= "margin-left:10em; margin-top: 2em;">
+<h3>Add a class message</h3>
 
     <form method = "POST" action="/submit">
 
@@ -20,12 +22,12 @@
     </label>
     <p class="error">{{body_error}}</p>
     <br>
-    <input type="submit" value = "Add Entry"/>
+    <input class="button" type="submit" value = "Add Entry"/>
    
     
     
     </form>
-
+</div>
 
 
 {% endblock %}

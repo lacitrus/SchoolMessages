@@ -2,27 +2,29 @@
 
 {% block content %}
 
-<h1>Signup</h1>
+<div class="text-center">
+
+<h3>Sign up</h3>
 
 <form action="/signup", method="POST">
     <p class="error">{{field_error}}</p>
-    <label>Username
-    <input type="text" name="username" >
-    </label>
+    <label for="inputUsername" class="sr-only">Username</label>
+    <input id="inputUsername" type="text" name="username" class="myinput" placeholder="Email address" >
+    
     <p class="error">{{name_error}}</p>
-    <label>Password
-    <input type="password" name="password" >
-    </label>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input id="inputPassword" type="password" name="password" class="myinput" placeholder="Password">
+    
     <p class="error">{{password_error}}</p>
-    <label>Verify Password
-    <input type="password" name="verify" >
-    </label>
+    <label for="inputVerify" class="sr-only">Verify Password</label>
+    <input id="inputVerify" type="password" name="verify" class="myinput" placeholder="Verify Password">
+    
     <p class="error">{{verify_error}}</p>
-    <input type="submit" value="Submit" >
+    <input class="button" type="submit" value="Submit" >
 
 
 </form>
-
+</div>
 
 
 

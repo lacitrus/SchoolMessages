@@ -1,22 +1,24 @@
 {% extends "base.html"%}
 
 {% block content %}
-<h2>Log in</h2>
 
+
+<div class="text-center">
+        <h3>Log in</h3>
 <form action="/login" method="POST">
-    <label>Username
-        <input type="text" name="username">
-    </label>
+    <label for="inputUsername" class="sr-only">Username</label>
+    <input id="inputUsername" type="text" name="username" class="myinput" placeholder="Email address">
+    
     <br>
-    <label>Password
-        <input type="password" name="password">
-    </label>
+    <label for="inputPassword" class="sr-only" >Password</label>
+    <input id="inputPassword" type="password" name="password" class="myinput" placeholder="Password">
+    
     <br>
-    <input type="submit" value="Log in">
+    <input class="button" type="submit" value="Log in">
 </form>
 
 <p>
-    <a href="/signup">Create Account</a>
+    <a href="/signup">No account? Create one</a>
 </p>
-
+</div>
 {% endblock %}
