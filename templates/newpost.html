@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Add a class message</h2>
+
+    <form method = "POST" action="/submit">
+
+    <label>Title for your new message
+    <br>
+    <input type= "text" name = "title" value={{newtitle}}>
+    <br>
+    </label>
+    <p class="error">{{title_error}}</p>
+    <br>
+    <br>
+    <label>Your new message
+    <br>
+    <textarea rows="5" cols="50" name = "body" >{{newbody}}</textarea>
+    </label>
+    <p class="error">{{body_error}}</p>
+    <br>
+    <input type="submit" value = "Add Entry"/>
+   
+    
+    
+    </form>
+
+
+
+{% endblock %}
